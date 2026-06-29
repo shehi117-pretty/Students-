@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Pretty Notes</title>
 
-<title>Pretty Notes</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>🌸 Pretty Notes</h1>
+    <h1>🌸 Pretty Notes</h1>
 
-<input id="title" placeholder="Note Title">
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search notes..."
+    >
 
-<textarea id="note" placeholder="Write your notes here..."></textarea>
+    <textarea
+        id="noteInput"
+        placeholder="Write something pretty..."
+    ></textarea>
 
-<button onclick="saveNote()">💾 Save Note</button>
+    <button onclick="addNote()">
+        ➕ Add Note
+    </button>
 
-<h2>Saved Notes</h2>
-
-<div id="savedNotes"></div>
+    <div id="notesContainer"></div>
 
 </div>
 
